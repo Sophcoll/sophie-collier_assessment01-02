@@ -1,0 +1,7 @@
+@import url("./normalize.css");
+@import url("./global.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+@import url("./typography.css");
+@import url("./components.css");
+@import url("./pseudo.css");
+@import url("./mediaquery.css");

@@ -1,0 +1,56 @@
+.line-hover-effect {
+  display: inline-block;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.line-hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0.4rem;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.3s ease-out;
+}
+
+.line-hover-effect:hover::before {
+  width: 100%;
+}
+
+.location-icon::before {
+  content: "<i class=" fa-solid fa-location-dot "></i>";
+}
+
+.read-more-btn a::after {
+  content: "\279E";
+  padding-left: 1rem;
+}
+
+.postcard-img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.postcard-img:hover::after {
+  opacity: 0.5;
+}
+
+.bottom-nav-list a:hover::after {
+  content: "\279E";
+  padding-left: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

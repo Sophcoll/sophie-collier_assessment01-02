@@ -1,0 +1,264 @@
+/* BANNER IMAGE STYLING */
+
+.home-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url("../img/homepage_banner-film.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i.arrow-down {
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+}
+
+/* NAVIGATION STYLING  */
+
+li {
+  list-style-type: none;
+}
+
+.top-nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+}
+
+nav.top-nav {
+  border-bottom: 0.2rem solid rgb(133, 133, 133);
+  opacity: 0.8;
+  margin-bottom: 5rem;
+}
+
+/* MAIN CONTENT STYLING */
+
+.postcard-right,
+.postcard-left {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 10rem;
+}
+
+.postcard-right {
+  padding-right: 4rem;
+}
+
+.postcard-left {
+  padding-left: 4rem;
+}
+
+.postcard-img {
+  grid-column-end: span 7;
+  position: relative;
+}
+
+.postcard-img img,
+.highlight-img img,
+.highlight-img-gallery img,
+.eats-img-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.postcard-text {
+  grid-column-end: span 5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: first baseline;
+}
+
+.postcard-text h2 {
+  padding-bottom: 3rem;
+}
+
+.read-more-btn {
+  margin-top: auto;
+  background: none;
+  border: none;
+  padding-top: 1rem;
+}
+
+.location-icon {
+  display: flex;
+}
+
+i {
+  opacity: 0.8;
+  align-self: center;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+/* ALIGNMENT STYLING FOR MEXICO & HONDURAS */
+
+.flex-right-align {
+  align-items: flex-end;
+}
+
+/* ALIGNMENT STYLING FOR GUATEMALA  */
+
+.flex-left-align {
+  align-items: flex-start;
+}
+
+/* FOOTER STYLING */
+
+.bottom-nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-top: 0.2rem solid rgb(133, 133, 133);
+  padding: 3rem 4rem 4rem;
+}
+
+.bottom-nav-list {
+  grid-column-end: span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-nav a {
+  grid-column-end: span 6;
+  justify-self: end;
+}
+
+/* MEXICO PAGE STYLING  */
+
+.mexico-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url("../img/pyramids.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight,
+.eats {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10rem;
+  border-bottom: 0.2rem solid rgb(133, 133, 133);
+  opacity: 0.8;
+  padding-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+.highlight,
+.places-text {
+  padding-right: 4rem;
+}
+
+.eats {
+  padding-left: 4rem;
+}
+
+.highlight-img-gallery,
+.eats-img-gallery {
+  grid-column-end: span 6;
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.highlight-img-gallery {
+  grid-template-areas:
+    "gallery-img-01 gallery-img-01"
+    "gallery-img-02 gallery-img-03"
+    "gallery-figcaption gallery-figcaption";
+}
+
+.eats-img-gallery {
+  grid-template-areas:
+    "gallery-img-01 gallery-img-02"
+    "gallery-img-03 gallery-img-03"
+    "gallery-figcaption gallery-figcaption";
+}
+
+.gallery-img-01 {
+  grid-area: gallery-img-01;
+}
+
+.gallery-img-02 {
+  grid-area: gallery-img-02;
+}
+
+.gallery-img-03 {
+  grid-area: gallery-img-03;
+}
+
+.gallery-figcaption {
+  grid-area: gallery-figcaption;
+}
+
+.highlight-img-gallery figcaption {
+  padding-left: 4rem;
+}
+
+.highlight-text,
+.eats-text {
+  grid-column-end: span 6;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.eats-text p {
+  border-bottom: 0.2rem solid rgb(133, 133, 133);
+  opacity: 0.8;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 100%;
+  height: 4rem;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  margin-top: auto;
+  background: none;
+  border: solid 1px black;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  flex: 1;
+}
+
+.places-map {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}

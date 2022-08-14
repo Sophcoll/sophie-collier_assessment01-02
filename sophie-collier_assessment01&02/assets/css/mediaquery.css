@@ -1,0 +1,151 @@
+@media (max-width: 1200px) {
+  /* FOR HOMEPAGE */
+
+  nav.top-nav {
+    margin-bottom: 0;
+  }
+
+  .postcard-right,
+  .postcard-left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top-stack"
+      "bottom-stack";
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+
+  .top-stack {
+    grid-area: top-stack;
+  }
+
+  .bottom-stack {
+    grid-area: bottom-stack;
+  }
+
+  .postcard-img {
+    margin-bottom: 5rem;
+  }
+
+  .postcard-right .postcard-text {
+    padding-right: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .postcard-left .postcard-text {
+    padding-left: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  p.location-icon {
+    margin-bottom: 3rem;
+  }
+
+  .highlight {
+    margin-top: 5rem;
+  }
+
+  /* FOR MEXICO PAGE */
+
+  .highlight,
+  .eats,
+  .places {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top-stack-text"
+      "bottom-stack-gallery";
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+
+  .top-stack-text {
+    grid-area: top-stack-text;
+  }
+
+  .bottom-stack-gallery {
+    grid-area: bottom-stack-gallery;
+  }
+
+  .eats-text,
+  .highlight-text,
+  .places-text {
+    padding: 0 6rem;
+  }
+
+  figcaption,
+  figcaption.left-align-text {
+    text-align: center;
+    padding: 1.6rem;
+    margin-bottom: 5rem;
+  }
+
+  .bottom-nav {
+    padding: 3rem 3rem 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* FOR HOMEPAGE */
+
+  h1,
+  h1.smaller-h1 {
+    padding: 0 3rem;
+    margin: 1.5rem 0;
+  }
+
+  .top-nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .postcard-right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .postcard-text p {
+    padding-bottom: 1rem;
+  }
+
+  .postcard-right .postcard-text {
+    padding-right: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .postcard-left .postcard-text {
+    padding-left: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  /* FOR MEXICO PAGE */
+
+  .highlight,
+  .eats {
+    gap: 5rem;
+  }
+
+  .places {
+    gap: 0;
+  }
+
+  .highlight-text,
+  .eats-text {
+    justify-content: start;
+  }
+
+  .places-text h2,
+  .highlight-text h2,
+  .eats-text h2 {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  .eats-text p,
+  .highlight-text p {
+    text-align: left;
+  }
+}
+
